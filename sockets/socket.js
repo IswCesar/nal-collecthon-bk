@@ -5,7 +5,7 @@ const {
     updateRecord
 } = require("../controllers/questionScore");
 const { saveResponse } = require("../controllers/questionResponse")
-const { existRoomRecord, saveRoomRecord, updateRoomRecord } = require("../controllers/room")
+const { existRoomRecord, saveRoomRecord, updateRoomRecord } = require("../controllers/rooms")
 const QuestionScore = require("../models/questionScore");
 const QuestionResponse = require("../models/questionResponse");
 const Room = require("../models/room");
