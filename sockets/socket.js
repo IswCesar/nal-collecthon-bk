@@ -133,6 +133,10 @@ io.on("connection", (client) => {
         io.emit('handClosed', payload)
     });
 
+    client.on("show-score", async(payload) => {
+        io.emit('score-showed', payload)
+    });
+
 
     client.on("handling-key", async(payload) => {
 
