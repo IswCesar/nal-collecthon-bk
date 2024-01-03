@@ -147,6 +147,15 @@ io.on("connection", (client) => {
         })
     });
 
+    client.on("hand-touched", async(payload) => {
+
+        console.log("hand-touched event catched on server")    
+
+        io.emit('touchedHand', {
+            payload
+        })
+    });
+
 
     client.on("reconnect_user", async(payload) => {
         console.log("reconnect user called...")
